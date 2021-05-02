@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap');
+
+:root {
+	--c1: #fcfeea;
+	--c2: #346544;
+	--c3: #1a3b7a;
+	--h1: 8em;
+	--h2: 6em;
+	--h3: 5em;
+	--h4: 4em;
+	--h5: 3em;
+	--h6: 2em;
+	--ps: 1.5em;
+}
+
+* {
+	background: var(--c1);
+	color: var(--c2);
+	font-family: "Oxanium";
+}
+
+h1 {
+	font-size: var(--h1);
+	margin: 0;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: var(--h2);
+	margin: 0;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: var(--h3);
+	margin: 0;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: var(--h4);
+	margin: 0;
+	font-weight: bold;
+}
+
+h5 {
+	font-size: var(--h5);
+	margin: 0;
+	font-weight: bold;
+}
+
+h6 {
+	font-size: var(--h6);
+	margin: 0;
+	font-weight: bold;
+}
+
+p {
+	font-size: var(--ps);
+	margin: 0;
+}
+
+.slider {
+	width: 100%;
+}
+
+#l {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 100%;
+	height: 25px;
+	background: var(--c3);
+	outline: none;
+	opacity: 0.7;
+	-webkit-transition: .2s;
+	transition: opacity .2s;
+}
+
+#l:hover {
+	opacity: 1;
+}
+
+#l::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	background: var(--c2);
+	cursor: pointer;
+}
+
+#l::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	background: var(--c2);
+	cursor: pointer;
+}
+
+button {
+	border: 3px solid var(--c3);
+	background: var(--c1);
+	color: var(--c2);
+	font-size: inherit;
+	padding: 0.5em;
+	border-radius: 0.25em;
+	cursor: pointer;
+}
+
+button:hover {
+	background: var(--c2);
+	color: var(--c1);
+}
+
+

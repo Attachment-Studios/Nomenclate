@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Nomenclate</title>
+	<link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+	<div class="intro">
+		<h1>Nomenclate</h1>
+		<h6>About</h6>
+		<p>Nomenclate is a simple tool that can be used for nomenclature of objects and names, but randomly anything that can be pronounced. From that it is expected that it will give results that is somewhat or actually readable. Making sense is not important for random naming. This tool is purely based on vanilla javascript, no plugins, addons or anything. Plus it is open-source.</p>
+	</div><br>
+	<div class="result">
+		<h6>Results</h6>
+		<p id="res"></p>
+	</div><br>
+	<div class="conf">
+		<h6>Configure</h6>
+		<div class="slider">
+			<p id="n"></p>
+			<input type="range" id="l" min=3 max=20 value=4>
+			<script type="text/javascript">
+				var slider = document.getElementById("l");
+				var output = document.getElementById("n");
+				output.innerHTML = `Length: ${slider.value}-${Number(slider.value) + 1}`;
+				slider.oninput = function() {
+				  output.innerHTML = `Length: ${slider.value}-${Number(slider.value) + Number(1)}`;
+				}
+			</script>
+		</div>
+		<button onclick="document.getElementById('res').innerHTML = `${formword(document.getElementById('l').value)}`">Go</button>
+	</div><br>
+</body>
+</html>
